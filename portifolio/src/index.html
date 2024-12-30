@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/src/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio de Luan</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Definindo altura total para as seções */
+        .full-screen-section {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .profile-section {
+            padding-top: 100px; /* Ajuste para o menu fixo */
+        }
+    </style>
+</head>
+<body>
+
+<!-- Menu -->
+<nav class="navbar fixed-top navbar-light navbar-expand-lg">
+    <div class="container">
+        <a class="navbar-brand" href="#"><img src="/img/logo-removebg-preview.png" alt="Logo" width="140"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link fw-semibold" href="#">Sobre</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fw-semibold" href="#">Habilidades</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fw-semibold" href="#">Projetos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fw-semibold" href="#">Contatos</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Área do Perfil  -->
+<div class="container profile-section full-screen-section d-flex align-items-center justify-content-around">
+    <div class="profile-text">
+        <h1>Prazer, Luan!</h1>
+        <h2>Desenvolvedor back-end em treinamento :)</h2>
+        <p>Estudante de ADS pelo Embarque Digital e apaixonado pela tecnologia.<br> </p>
+    </div>
+    <div class="profile-image-container">
+        <img src="/img/luan2.png" alt="Foto de Luan" class="profile-image">
+    </div>
+</div>
+
+<!-- Sobre Mim -->
+<section class="about-section text-center full-screen-section">
+    <div class="container">
+        <h2 class="fw-bold">Sobre mim</h2>
+        <div class="about-text mt-4">
+            <p>Sempre tive um computador em casa e assim já sabia que tecnologia era minha paixão começando desde cedo inspecionando elementos web no YouTube colocando inscritos fakes no meu canal de Minecraft.</p>
+            <p>Comecei a estudar na área em 2023 com meu curso técnico pelo Grau Técnico Recife em ADS e assim me apaixonei na área da tecnologia. Agora estou estudando na FICR Recife fazendo graduação em ADS pelo projeto do Embarque Digital e querendo experiências novas.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Habilidades Section -->
+<section class="skills-section text-center full-screen-section">
+    <div class="container">
+        <h2 class="fw-bold mb-5">Habilidades</h2> <!-- Ajuste de espaçamento com mb-5 -->
+        <div class="row row-cols-2 row-cols-md-4 g-5"> <!-- g-4 adiciona espaçamento entre os ícones -->
+            <!-- Python -->
+            <div class="col">
+                <div class="skill-item">
+                    <img src="/img/python.png" alt="Python">
+                    <div class="skill-name mt-2">Python</div> <!-- mt-2 adiciona margem acima do nome da habilidade -->
+                </div>
+            </div>
+            <!-- Java -->
+            <div class="col">
+                <div class="skill-item">
+                    <img src="/img/java.png" alt="Java">
+                    <div class="skill-name mt-2">Java</div>
+                </div>
+            </div>
+            <!-- HTML5 -->
+            <div class="col">
+                <div class="skill-item">
+                    <img src="/img/html.png" alt="HTML5">
+                    <div class="skill-name mt-2">HTML5</div>
+                </div>
+            </div>
+            <!-- JavaScript -->
+            <div class="col">
+                <div class="skill-item">
+                    <img src="/img/javascript.png" alt="JavaScript">
+                    <div class="skill-name mt-2">JavaScript</div>
+                </div>
+            </div>
+            <!-- CSS3 -->
+            <div class="col">
+                <div class="skill-item">
+                    <img src="/img/css.png" alt="CSS3">
+                    <div class="skill-name mt-2">CSS3</div>
+                </div>
+            </div>
+            <!-- Figma -->
+            <div class="col">
+                <div class="skill-item">
+                    <img src="/img/figma.png" alt="Figma">
+                    <div class="skill-name mt-2">Figma</div>
+                </div>
+            </div>
+            <!-- Node JS -->
+            <div class="col">
+                <div class="skill-item">
+                    <img src="/img/nodejs.png" alt="Node JS">
+                    <div class="skill-name mt-2">Node JS</div>
+                </div>
+            </div>
+            <!-- MySQL -->
+            <div class="col">
+                <div class="skill-item">
+                    <img src="/img/mysql.png" alt="MySQL">
+                    <div class="skill-name mt-2">MySQL</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

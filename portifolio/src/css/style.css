@@ -1,0 +1,127 @@
+body {
+    font-family: Arial, sans-serif;
+}
+.navbar {
+    border-bottom: 1px solid #000;
+    background-color: white;
+}
+/* Efeito de hover nos itens do navbar */
+.navbar-nav .nav-link {
+    color: #000; /* Cor padrão dos links */
+    transition: color 0.3s, border-bottom 0.3s;
+}
+.navbar-nav .nav-link:hover {
+    color: #0a0a45; /* Cor ao passar o mouse */
+    border-bottom: 2px solid #0a0a45; /* Sublinhado no hover */
+}
+.profile-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px;
+}
+.profile-text h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.profile-text h2 {
+    font-size: 1.5rem;
+    font-weight: normal;
+}
+.profile-image-container {
+    position: relative;
+    width: 220px;
+    height: 220px;
+    background-color: #0a0a45;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 70px;
+}
+.profile-image {
+    position: absolute;
+    top: -80px; /* Ajuste para sobrepor um pouco a borda */
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.about-section {
+    padding: 50px 0;
+    background-color: #f8f9fa; /* Cor de fundo leve */
+}
+.about-text {
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+.skills-section {
+    padding: 50px 0;
+    background-color: #f8f9fa; /* Cor de fundo leve */
+}
+.skill-item {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: transform 0.3s;
+    background-color: #ffffff;
+}
+.skill-item:hover {
+    transform: scale(1.1);
+    background-color: #f0f0f0;
+}
+.skill-item img {
+    width: 50px;
+    height: 50px;
+}
+.skill-name {
+    margin-top: 10px;
+    font-weight: bold;
+}
+.full-screen-section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-section {
+    padding-top: 100px; /* Ajuste para o menu fixo */
+}
+
+.project-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.project-image {
+    transition: transform 0.3s ease;
+}
+
+.project-item:hover .project-image {
+    transform: scale(1.05);
+}
+
+.project-details {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    padding: 20px;
+    text-align: center;
+}
+
+.project-item:hover .project-details {
+    opacity: 1;
+}
